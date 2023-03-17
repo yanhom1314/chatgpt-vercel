@@ -59,7 +59,7 @@ export const post: APIRoute = async context => {
     return new Response("没有输入任何文字。")
   }
   if (pwd && pwd !== password) {
-    return new Response("密码错误，请联系网站管理员。")
+    return new Response("你输入正确的体验码。")
   }
 
   const tokens = messages.reduce((acc, cur) => {
