@@ -29,6 +29,8 @@ const maxTokens = Number(
 
 const pwd = import.meta.env.PASSWORD || process.env.PASSWORD
 
+const traiLCode = import.meta.env.TRAIL_CODE || process.env.TRAIL_CODE
+
 export const post: APIRoute = async context => {
   const body = await context.request.json()
   const apiKey = apiKeys.length
